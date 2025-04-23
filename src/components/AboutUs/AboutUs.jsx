@@ -37,7 +37,7 @@ const AboutUs = () => {
           </div>
           <div className="about-image-container">
             <img
-              src="/about-story.jpg"
+              src="/about-us-flower.webp"
               alt="Our Story"
               className="rounded-lg shadow-lg"
               onError={(e) => {

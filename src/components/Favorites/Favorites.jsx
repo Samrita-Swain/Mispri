@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaUser } from 'react-icons/fa';
+import { FaUser, FaHeart } from 'react-icons/fa';
 import SignInModal from '../Auth/SignInModal';
 import './Favorites.css';
 
@@ -11,7 +11,7 @@ const Favorites = () => {
     <div className="favorites-container">
       <div className="not-logged-in-container">
         <div className="illustration-container">
-          <img src="public/my-fvt-img.avif" alt="" />
+          <FaHeart className="text-red-500 text-8xl mb-4" />
         </div>
 
         <h2 className="message-title">Hey traveler looks like you are not Logged in</h2>
@@ -19,12 +19,12 @@ const Favorites = () => {
         <div className="action-buttons">
           <button
             onClick={() => setSignInModalOpen(true)}
-            className="login-button"
+            className="login-button hover:-translate-y-1 hover:shadow-md transition-all duration-300"
           >
             Log in
           </button>
 
-          <Link to="/" className="continue-button">
+          <Link to="/" className="continue-button hover:-translate-y-1 hover:shadow-md transition-all duration-300">
             Continue Shopping
           </Link>
         </div>

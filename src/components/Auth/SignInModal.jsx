@@ -84,7 +84,7 @@ const SignInModal = ({ isOpen, onClose }) => {
           </button>
 
           <div className="text-center text-sm text-gray-500 mt-8 mb-4">
-            <p>By continuing I agree to FlowerAura's <Link to="/terms" className="text-[#2D7D90]">Terms & Conditions</Link> and <Link to="/privacy" className="text-[#2D7D90]">Privacy Policy</Link></p>
+            <p>By continuing I agree to Mispri's <Link to="/terms" className="text-[#2D7D90]">Terms & Conditions</Link> and <Link to="/privacy" className="text-[#2D7D90]">Privacy Policy</Link></p>
           </div>
         </div>
       </div>

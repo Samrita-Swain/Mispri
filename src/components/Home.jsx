@@ -72,10 +72,10 @@ const Home = () => {
           <h2 className="text-2xl font-bold text-center mb-8">Bestselling Products</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[
-              { name: 'Mixed Roses Bouquet', price: '₹599', image: 'https://cdn.pixabay.com/photo/2018/01/29/07/11/flower-3115353_640.jpg' },
-              { name: 'Chocolate Truffle Cake', price: '₹749', image: 'https://cdn.pixabay.com/photo/2016/11/22/18/52/cake-1850011_640.jpg' },
-              { name: 'Money Plant', price: '₹499', image: 'https://cdn.pixabay.com/photo/2018/07/16/13/17/monstera-3541387_640.jpg' },
-              { name: 'Personalized Mug', price: '₹399', image: 'https://cdn.pixabay.com/photo/2015/05/31/10/54/coffee-791439_640.jpg' },
+              { name: 'Mixed Roses Bouquet', price: '₹599', image: '/MIXED ROSES BOUQUET.jpeg' },
+              { name: 'Chocolate Truffle Cake', price: '₹749', image: '/Chocolate Truffle Cake.jpeg' },
+              { name: 'Money Plant', price: '₹499', image: '/money-plant.jpeg' },
+              { name: 'Personalized Mug', price: '₹399', image: '/Personalized Mug.jpg' },
             ].map((product, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 group">
                 <div className="h-48 overflow-hidden">

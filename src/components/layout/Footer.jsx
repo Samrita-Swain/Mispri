@@ -136,8 +136,8 @@ const Footer = () => {
         <div className="border-t border-gray-200 pt-6 mb-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <Link to="/">
-              <h1 className='text-[#0e4d65] text-xl font-semibold'>Mispri</h1>
+              <Link to="/" className="flex items-center">
+                <img src="/LOGO.png" alt="Mispri Logo" className="h-10 w-auto mb-2" />
               </Link>
               <p className="text-xs text-gray-500 mt-2">© 2025 Mispri. All rights reserved by <a href="https://www.wipstertechnologies.com/" target="_blank" className="hover:text-[#dc2626] font-bold transition duration-500">Wipster Technologies Private Limited</a>
               </p>

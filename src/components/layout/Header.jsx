@@ -155,8 +155,8 @@ const Header = () => {
                 <FaBars className="text-xl" />
               </button>
 
-              <Link to="/" className="flex items-center logo-container">
-              <h1 className='text-[#0e4d65] text-3xl font-semibold'>Mispri</h1>
+              <Link to="/" className="flex items-center justify-center logo-container">
+                <img src="/LOGO.png" alt="Mispri Logo" className="h-10 w-auto" />
               </Link>
 
               <div className="flex items-center space-x-3">
@@ -245,7 +245,7 @@ const Header = () => {
             <div className="hidden md:flex items-center w-full justify-between">
               {/* Logo */}
               <Link to="/" className="flex items-center logo-container mr-6">
-              <h1 className='text-[#0e4d65] text-3xl font-semibold'>Mispri</h1>
+                <img src="/LOGO.png" alt="Mispri Logo" className="h-12 w-auto" />
               </Link>
 
               {/* Location Selector */}

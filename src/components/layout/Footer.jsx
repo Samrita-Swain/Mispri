@@ -17,7 +17,7 @@ const Footer = () => {
                     About Us
                   </Link>
                 </div>
-                
+
                 <div className="mb-3">
                   <Link to="/coupons-deals" className="text-gray-700 hover:text-[#2D7D90]">
                     Coupons & Deals
@@ -29,12 +29,12 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="mb-3">
-                  <Link to="/terms-conditions" className="text-gray-700 hover:text-[#2D7D90]">
+                  <Link to="/terms-and-conditions" className="text-gray-700 hover:text-[#2D7D90]">
                     Terms and Conditions
                   </Link>
                 </div>
-                
-                
+
+
               </div>
 
               {/* Second Column */}
@@ -78,7 +78,7 @@ const Footer = () => {
 
               {/* Third Column */}
               <div>
-                
+
                 <div className="mb-3">
                   <Link to="/faq" className="text-gray-700 hover:text-[#2D7D90]">
                     FAQ

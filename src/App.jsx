@@ -5,6 +5,7 @@ import TrackOrder from './components/TrackOrder/TrackOrder';
 import Cart from './components/Cart/Cart';
 import Favorites from './components/Favorites/Favorites';
 import AboutUs from './components/AboutUs/AboutUs';
+import TermsAndConditions from './components/TermsAndConditions';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="cart" element={<Cart />} />
           <Route path="favourites" element={<Favorites />} />
           <Route path="about-us" element={<AboutUs />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
           {/* Add more routes as needed */}
         </Route>
       </Routes>

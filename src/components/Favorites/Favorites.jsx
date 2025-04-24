@@ -11,7 +11,7 @@ const Favorites = () => {
     <div className="favorites-container">
       <div className="not-logged-in-container">
         <div className="illustration-container">
-          <FaHeart className="text-red-500 text-8xl mb-4" />
+          <img src="/my-fvt-img.avif" alt="" />
         </div>
 
         <h2 className="message-title">Hey traveler looks like you are not Logged in</h2>

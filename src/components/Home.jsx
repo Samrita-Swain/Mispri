@@ -1,28 +1,45 @@
 import ImageCarousel from './common/ImageCarousel';
 import { carouselImages } from '../data/carouselData';
 import { Link } from 'react-router-dom';
+import './styles/CategoryScroll.css';
 
 const Home = () => {
+  // Category data
+  const categories = [
+    { name: 'Mothers Day', image: '/mothers-day.jpeg', url: '/mothers-day' },
+    { name: 'Flowers', image: '/flower-1.webp', url: '/flowers' },
+    { name: 'Cakes', image: '/cake.jpeg', url: '/cakes' },
+    { name: 'Combos', image: '/combo.jpeg', url: '/combos' },
+    { name: 'Plants', image: '/plant.avif', url: '/plants' },
+    { name: 'Personalised', image: '/gift.webp', url: '/personalised' },
+  ];
+
   return (
     <div className="w-full">
+      {/* Mobile Categories Section - Shown only on mobile */}
+      <div className="md:hidden container mx-auto px-4 py-4">
+        <h2 className="text-xl font-semibold text-gray-800 mb-3 px-1">Shop By Category</h2>
+        <div className="flex overflow-x-auto pb-4 gap-4 px-1 hide-scrollbar">
+          {categories.map((category, index) => (
+            <Link to={category.url} key={index} className="flex-shrink-0 w-20 flex flex-col items-center group">
+              <div className="w-16 h-16 rounded-full overflow-hidden border border-gray-200 mb-2 shadow-sm">
+                <img src={category.image} alt={category.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <h3 className="text-xs font-medium text-gray-800 text-center">{category.name}</h3>
+            </Link>
+          ))}
+        </div>
+      </div>
+
       {/* Image Carousel */}
       <div className="w-full">
         <ImageCarousel images={carouselImages} />
       </div>
 
-
-
-      {/* Categories Section */}
-      <div className="container mx-auto px-4 mb-12">
+      {/* Desktop Categories Section - Hidden on mobile */}
+      <div className="hidden md:block container mx-auto px-4 mb-12 mt-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {[
-            { name: 'Mothers Day', image: '/mothers-day.jpeg', url: '/mothers-day' },
-            { name: 'Flowers', image: '/flower-1.webp', url: '/flowers' },
-            { name: 'Cakes', image: '/cake.jpeg', url: '/cakes' },
-            { name: 'Combos', image: '/combo.jpeg', url: '/combos' },
-            { name: 'Plants', image: '/plant.avif', url: '/plants' },
-            { name: 'Personalised', image: '/gift.webp', url: '/personalised' },
-          ].map((category, index) => (
+          {categories.map((category, index) => (
             <Link to={category.url} key={index} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300 group">
               <div className="h-40 overflow-hidden">
                 <img src={category.image} alt={category.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
@@ -63,8 +80,6 @@ const Home = () => {
           ))}
         </div>
       </div>
-
-
 
       {/* Featured Products */}
       <div className="bg-gray-50 py-10">
